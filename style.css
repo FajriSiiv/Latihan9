@@ -1,0 +1,440 @@
+@font-face{
+    font-family: 'Poppins';
+    src: url('../Fonts/Poppins/Poppins-SemiBold.ttf');
+}
+@font-face{
+    font-family: 'Roboto';
+    src: url('../Fonts/RobotoMono/RobotoMono-VariableFont_wght.ttf');
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #eaea;
+    overflow-x: hidden;
+    font-family: 'Poppins';
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.header-right{
+    display: flex;
+    margin-left: 50px;
+}
+.header-right img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.header-right h3{
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family:'Roboto' ;
+}
+.header-left{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    margin-right:20px ;
+}
+.header-left li{
+    list-style: none;
+}
+.header-left li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 550;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 20px;
+    transition: ease all .4s;
+    
+}
+.header-left li a:hover{
+    background-color: #fff;
+}
+.jumbotron{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    color: black;
+}
+.jumbotron .container{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 40px;
+    height:50vh;
+}
+.jumbotron .container .text{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+}
+.jumbotron .container .text h4{
+    margin: 10px 0;
+    font-family: 'Poppins';
+    letter-spacing: 3px;
+    font-size: 22px;
+}
+.jumbotron .container .text h1{
+    font-family: 'Roboto';
+    text-transform: uppercase;
+}
+.jumbotron .container .gambar{
+    width: 50%;
+}
+.jumbotron .container img{
+    width: 500px;
+}
+.jumbotron .container .text p{
+    margin-bottom: 20px;
+}
+.jumbotron .container .text a{
+    padding: 5px 15px;
+    background-color: transparent;
+    border-radius: 50px;
+    margin: 0 5px;
+    border: 1px solid black;
+    text-decoration: none;
+    transition: all .3s;
+    color: rgb(0, 0, 0);
+}
+.jumbotron .container .text a:active{
+    color: white;
+    background-color: rgb(30, 79, 238);
+}
+.feature{
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.feature .card{
+    box-shadow: 1px 0px 5px  black;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+.mid{
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    height: 80vh;
+    box-shadow: 1px 1px 10px black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.mid .container{
+    height: 100%;
+}
+.mid .container .mid-data{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    align-items: center;
+}
+.mid .container .mid-data img{
+    position: relative;
+    width: 300px;
+    animation-name: laptop;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+@keyframes laptop{
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.mid .container .mid-data .text-mid{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.mid .container .mid-data .text-mid h3{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+.mid-data .text-mid p{
+
+}
+.mid-data .text-mid a{
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid black;
+    width: max-content;
+    text-decoration: none;
+}
+.mid-data .text-mid a:active{
+    background-color: rgb(30, 79, 238);
+    color: white;
+}
+/* Responsve */
+
+/* Laptop */
+@media (min-width:769px){
+    .bar{
+        display: none;
+    }
+    .jumbotron .container .text h1{
+        width: 30%;
+    }
+    .jumbotron .container .text p{
+        width: 35%;
+        font-size: 15px;
+    }
+    .jumbotron .container .gambar{
+        position: absolute;
+        right: 100px;
+        top: 50px;
+    }
+    .jumbotron .container img{
+        width:750px;
+        height: 400px;
+        animation-name: jalan;
+        animation-duration: 3s;
+    }
+    @keyframes jalan {
+        from{transform: translateX(200px);}
+        to{transform: translateX(0);}
+        
+    }
+    .feature{
+        justify-content: center;
+        margin: auto;
+        margin-top: 50px !important;
+    }
+    .feature .card .fa{
+        font-size: 45px;
+        margin-top: 5px;
+    }
+    .feature .card h4{
+        margin: 5px 0;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .feature .card p{
+        text-align: left;
+        padding: 0 20px 0 30px;
+    }
+    .mid .container .mid-data{
+        height: 86%;
+    }
+    .mid-data .text-mid h3{
+        font-size: 25px;
+    }
+    .mid-data .text-mid p{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Tablet */
+@media (max-width:768px){
+    .bar{
+        display: none;
+    }
+    .header-left li a{
+        font-size: 14px;
+    }
+    .jumbotron{
+        height: min-content;
+    }
+    .jumbotron .container{
+        height: auto;
+    }
+    .jumbotron .container .text{
+        width: 50%;
+    }
+    .jumbotron .container .text h1{
+        font-size: 26px;
+    }
+    .jumbotron .container .text h4{
+        font-size: 18px;
+        width: 100%;
+    }
+    .jumbotron .container .text p{
+        font-size: 13px;
+    }
+    .jumbotron .container img{
+        position: absolute;;
+        width: 400px;
+        animation-name: jalan;
+        animation-duration: 3s;
+        right: 0;
+    }
+    @keyframes jalan {
+        from{transform: translateY(-50%);}
+        to{transform: translateY(0);}
+        
+    }
+    .jumbotron .container .gambar{
+        display: flex;
+        align-items: center;
+    }
+    .jumbotron .container .text-btn{
+        display:flex ;
+        flex-direction: column;
+    }
+    .jumbotron .container a{
+        width: max-content;
+        margin: 5px 0 !important;
+    }
+    .feature{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .feature .card{
+        width: 40%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .feature .card .fa{
+        font-size: 35px;
+        margin-top: 5px;
+    }
+    .feature .card h4{
+        font-size: 20px;
+        margin: 8px 0;
+        text-transform: uppercase;
+    }
+    .feature .card p{
+        text-align: left;
+        margin-left: 10px;
+    }
+    .mid .container .mid-data img{
+        width: 38%;
+    }
+    .mid-data .text-mid p{
+        margin: 3px 0;
+    }
+}
+
+/* Mobile */
+@media (max-width:576px){
+    header{
+        width: 100%;
+        justify-content: space-between;
+        
+    }
+    .header-right{
+        margin-left: 10px;
+    }
+    .header-left{
+        position: absolute;
+        flex-direction: column;
+        right: 0;
+        top: 0;
+        background: rgb(219, 170, 235);
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        transform: translateX(100%);
+        transition: all .5s;
+        width: 100%;
+        margin: 0;
+        padding:0;
+    }
+    .header-left li{
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+    .header-left li a{
+        padding: 0;
+        font-size: 20px;
+    }
+    .header-left li a:hover{
+        background: none;
+        color: white;
+    }
+    .slide{
+        transform: translateX(0%);
+    }
+    .bar{
+        cursor: pointer;
+        z-index: 1;
+        font-size: 25px;
+        display:unset;
+        position: absolute;
+        right: 30px;
+    }
+    .jumbotron {
+    }
+    .jumbotron .container{
+        width: 100% !important;
+        padding: 20px;
+    }
+    .jumbotron .container .text{
+        width: 150% !important;
+    }
+    .jumbotron .container .text h1{
+        width: 100%;
+    }
+    .jumbotron .container .text .text-btn{
+        display: flex;
+        flex-direction: column;
+    }
+    .jumbotron .container .text a{
+        width: max-content;
+        margin: 5px 0;
+    }
+    .jumbotron .container .gambar img{
+        display: none;
+    }
+    .feature{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .feature .card{
+        width: 80%;
+    }
+    .feature .card p{
+        text-align: center;
+    }
+    .mid{
+        height: max-content;
+    }
+    .mid .container .mid-data{
+        max-height: max-content;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .mid-data .text-mid{
+        width: 100% !important;
+        padding: 0 15px;
+        box-sizing: border-box;
+        text-align: left;
+    }
+    .mid-data .text-mid h3{
+        text-align: center;
+        font-size: 30px;
+    }
+    .mid-data .text-mid p{
+        width: 90%;
+        margin: 10px 0;
+        font-weight: 400;
+    }
+    .mid-data .text-mid a{
+        margin-top: 5px;
+    }
+    .mid-data img{
+        display: none;
+    }
+}
