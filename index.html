@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 9</title>
+    <link rel="stylesheet" href="style.css"><!-- 
+    <link rel="stylesheet" href="../FontA/css/all.css"> -->
+    <script src="https://kit.fontawesome.com/cf5896323e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-right">
+            <img src="segitiga.png" alt="">
+            <div class="logo"><h3>Siiv</h3></div>
+        </div>
+        <div class="header-left">
+            <li><a href="#">Home</a></li>
+            <li><a href="#mid">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#feature">Feature</a></li>
+        </div>
+        <div class="bar">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </header>
+
+
+    <!-- Jumbtron -->
+    <div class="jumbotron">
+        <div class="container">
+            <div class="text">
+                <h1>Do You Need Reliable Hosting?</h1>
+                <h4>LEADING GLOBAL WEB HOSTING</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ducimus odio! Maiores sit impedit vel totam alias incidunt.</p>
+                <div class="text-btn">
+                    <a href="#" class="btns">Dedicated Servers</a>
+                    <a href="#" class="btns">Contact</a>
+                </div>
+            </div>
+            <div class="gambar">
+                <img src="welcome.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Feature -->
+    <div class="feature" id="feature">
+        <div class="card">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <h4>Config</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, nostrum.</p>
+        </div>
+        <div class="card">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            <h4>Server</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, nostrum.</p>
+        </div>
+        <div class="card">
+            <i class="fa fa-money-bill    "></i>
+            <h4>Cheap</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, nostrum.</p>
+        </div>
+        <div class="card">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <h4>Secure</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, nostrum.</p>
+        </div>
+    </div>
+
+    <div class="mid" id="mid">
+        <div class="container">
+            <div class="mid-data">
+                <img src="laptop.png" alt="">
+                <div class="text-mid">
+                    <h3>About SIIV</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus commodi quibusdam velit, aperiam ea doloremque.</p>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus iusto ipsum itaque vero optio dignissimos dolores veniam eveniet molestiae amet!</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ad eligendi nemo quaerat rerum et.</p>
+                    
+                    <a href="#">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const bar = document.querySelector('.bar');
+        const headerLeft = document.querySelector('.header-left');
+
+        bar.addEventListener('click',function(){
+            headerLeft.classList.toggle('slide');
+        })
+    </script>
+</body>
+</html>
